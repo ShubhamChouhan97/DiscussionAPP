@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discussion App</title>
+    <link rel="stylesheet" href="discusioncss.css">
+</head>
+<body>
+    <!-- header div -->
+    <div class="header">
+        <div class="dis">Discussion App</div>
+        <div id="name"></div>
+    </div>
+    <!-- container div -->
+    <div class="container">
+        <!-- left container -->
+        <div class="left-pane">
+            <div class="top">
+                <button class="btn1" onclick="addquestion()">New Question Form</button>
+                <input type="text" name="title" id="title" placeholder="Enter the title" class="search1" required>
+            </div>
+        </div>
+        <!-- right container -->
+        <div class="right-pane">
+            <p class="p1"> <b>Welcome To Discussion portal ! </b></p>
+            <p class="p2"> Enter a subject and question to get started</p>
+            <input type="text" placeholder="Subject" id="subject" class="subject1">
+            <textarea name="question" id="question" placeholder="Enter your question" rows="3" class="text1" required></textarea>
+            <br>
+            <button class="submitbtn" onclick="submitquestion()">Submit</button>
+            <!-- Responses section -->
+            <div class="responses" id="responses">
+                <!-- Responses will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+    <script src="discusionjs.js"></script>
+</body>
+</html>
